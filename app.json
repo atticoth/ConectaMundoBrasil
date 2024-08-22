@@ -18,10 +18,21 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.conectamundo.ConectaMundoBrasil"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1e913142-e1c4-48df-a2ed-735fafa9d5d8"
+      }
+    },
+    "owner": "conectamundo",
+    "plugins": [
+      "expo-build-properties",
+      "expo-asset"
+    ]
   }
 }
