@@ -2,10 +2,13 @@ import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import { LoadingScreen } from "./LoadingScreen";
-import { InitialScreen } from "./InitialScreen";
-import { TourismDetailsScreen } from "./TourismDetailsScreen";
-import { DetalhesContagem } from "./DetalhesContagem";
+import { LoadingScreen } from "./View/LoadingScreen";
+import { InitialScreen } from "./View/InitialScreen";
+import { TourismDetailsScreen } from "./View/TourismDetailsScreen";
+import { DetalhesContagem } from "./View/DetalhesContagem";
+import { DetailsScreenContagem } from "./View/DetailsScreenContagem";
+import { AtracoesContagem} from './View/AtracoesContagem';
+import { PracadaGloriaTourism} from './View/PontosTuristicos/Contagem/PracadaGloria';
 
 const Stack = createNativeStackNavigator();
 
@@ -31,8 +34,19 @@ function App() {
         <Stack.Screen
           name="DetalhesContagem"
           component={DetalhesContagem}
-          options={{ title: "Detalhes sobre Contagem" }}
+          options={{ title: "Detalhes" }}
         />
+        <Stack.Screen
+          name="DetailsScreenContagem"
+          component={DetailsScreenContagem}
+          options={{ title: "Pontos Turísticos" }}
+        />
+        <Stack.Screen
+          name="AtracoesContagem"
+          component={AtracoesContagem}
+          options={{ title: "Atrações Turísticos" }}
+        />
+        <Stack.Screen name="PracadaGloriaTourism" component={PracadaGloriaTourism} options={{ title: 'Detalhes do ponto turístico' }} />
       </Stack.Navigator>
     </NavigationContainer>
   );

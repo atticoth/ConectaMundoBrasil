@@ -1,18 +1,17 @@
 import * as React from 'react';
-import { View, Image, TouchableOpacity, StyleSheet, Dimensions, Text } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
+import { View, Image, TouchableOpacity, ImageBackground, StyleSheet, Dimensions, Text } from 'react-native';
 
 export function InitialScreen({ navigation }) {
   const { width, height } = Dimensions.get('window');
 
   return (
-    <LinearGradient
-      colors={['#1cb5e0', '#6dd5ed', '#28a745']}
-      style={styles.backgroundGradient}
+    <ImageBackground
+      source={require("../assets/images/fundo.jpeg")}
+      style={{ flex: 1, justifyContent: "center" }}
     >
     <View style={styles.container}>
       <View style={[styles.imageContainer, { height: height * 0.4, marginTop: height * 0.05 }]}>
-        <Image source={require('./assets/images/logoabertura.png')} style={[styles.image, { width: width }]} resizeMode="contain" />
+        <Image source={require('../assets/images/logoabertura.png')} style={[styles.image, { width: width }]} resizeMode="contain" />
       </View>
       <View style={styles.buttonContainer}>
         <TouchableOpacity
@@ -24,7 +23,7 @@ export function InitialScreen({ navigation }) {
       </View>
     </View>
 
-    </LinearGradient>
+    </ImageBackground>
   );
 }
 

@@ -11,9 +11,9 @@ export function LoadingScreen({ navigation }) {
 
   return (  
     <View style={styles.container}>
-      <ImageBackground source={require('./assets/images/telainicial.jpeg')} style={styles.backgroundImage} resizeMode="cover">
+      <ImageBackground source={require('../assets/images/telainicial.jpeg')} style={styles.backgroundImage} resizeMode="cover">
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'flex-start' }}>
-        <Image source={require('./assets/images/telainicialbrasil.jpg')} style={styles.image} resizeMode="stretch" />
+        <Image source={require('../assets/images/telainicialbrasil.jpg')} style={styles.image} resizeMode="stretch" />
       </View>
       <View style={styles.activityIndicatorContainer}>
         <ActivityIndicator size="large" color="white" />

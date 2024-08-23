@@ -4,6 +4,7 @@ import {
   Text,
   StyleSheet,
   Image,
+  ImageBackground,
   ScrollView,
   TouchableOpacity,
   Dimensions,
@@ -16,8 +17,8 @@ const data = [
     id: 1,
     title: "Contagem/MG",
     description: "Descrição Contagem",
-    imageUrl: require("./assets/images/comerc.png"),
-    logoUrl: require("./assets/images/pracadagloria.jpg"),
+    imageUrl: require("../assets/images/comerc.png"),
+    logoUrl: require("../assets/images/pracadagloria.jpg"),
     screen: "DetalhesContagem",
   },
   // {
@@ -58,9 +59,9 @@ export function TourismDetailsScreen() {
   //}
 
   return (
-    <LinearGradient
-      colors={["#1cb5e0", "#6dd5ed", "#28a745"]}
-      style={styles.backgroundGradient}
+    <ImageBackground
+      source={require("../assets/images/fundo.jpeg")}
+      style={{ flex: 1, justifyContent: "center" }}
     >
       <View style={styles.container}>
         {/*<GradientBackground />*/}
@@ -86,7 +87,7 @@ export function TourismDetailsScreen() {
           ))}
         </ScrollView>
       </View>
-    </LinearGradient>
+    </ImageBackground>
   );
 }
 

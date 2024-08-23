@@ -3,6 +3,7 @@ import {
   View,
   Text,
   Image,
+  ImageBackground,
   TouchableOpacity,
   Dimensions,
   StyleSheet,
@@ -12,16 +13,16 @@ import { LinearGradient } from "expo-linear-gradient";
 
 export function DetalhesContagem({ navigation }) {
   return (
-    <LinearGradient
-      colors={["#1cb5e0", "#6dd5ed", "#28a745"]}
-      style={styles.backgroundGradient}
+    <ImageBackground
+      source={require("../assets/images/fundo.jpeg")}
+      style={{ flex: 1, justifyContent: "center" }}
     >
       <ScrollView contentContainerStyle={styles.scrollContainer}>
         <View style={styles.content}>
           <Text style={styles.title}>Contagem</Text>
           <View style={styles.imageContainer}>
             <Image
-              source={require("./assets/images/pracadagloria.jpg")}
+              source={require("../assets/images/pracadagloria.jpg")}
               style={styles.imageLarge}
               resizeMode="contain"
             />
@@ -67,13 +68,13 @@ export function DetalhesContagem({ navigation }) {
         <View style={styles.buttonContainer}>
           <TouchableOpacity
             style={[styles.button, styles.firstButton]}
-            onPress={() => navigation.navigate("InitialScreen")}
+            onPress={() => navigation.navigate("AtracoesContagem")}
           >
             <Text style={styles.buttonText}>Atrações</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={[styles.button, styles.secondButton]}
-            onPress={() => navigation.navigate("InitialScreen")}
+            onPress={() => navigation.navigate("DetailsScreenContagem")}
           >
             <Text style={[styles.buttonText, styles.secondButtonText]}>
               Pontos Turísticos
@@ -81,7 +82,7 @@ export function DetalhesContagem({ navigation }) {
           </TouchableOpacity>
         </View>
       </ScrollView>
-    </LinearGradient>
+    </ImageBackground>
   );
 }
 
