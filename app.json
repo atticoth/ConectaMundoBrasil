@@ -6,13 +6,19 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.conectamundo.ConectaMundoBrasil",
+      "buildNumber": "1"
     },
     "android": {
       "adaptiveIcon": {
@@ -21,6 +27,9 @@
       },
       "package": "com.conectamundo.ConectaMundoBrasil"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "web": {
       "favicon": "./assets/favicon.png"
     },
@@ -31,8 +40,7 @@
     },
     "owner": "conectamundo",
     "plugins": [
-      "expo-build-properties",
-      "expo-asset"
+      "expo-build-properties"
     ]
   }
 }

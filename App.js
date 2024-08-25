@@ -16,6 +16,8 @@ import { ParqueEcologicoTourism } from "./View/PontosTuristicos/Contagem/ParqueE
 import { QuilomboArturosTourism } from "./View/PontosTuristicos/Contagem/QuilombolaArturos";
 import { IgrejaTourism } from "./View/PontosTuristicos/Contagem/IgrejaSaoGoncalo";
 
+import { EmDesenvolvimento } from "./View/EmDesenvolvimento";
+
 const Stack = createNativeStackNavigator();
 
 function App() {
@@ -85,6 +87,12 @@ function App() {
         <Stack.Screen
           name="IgrejaTourism"
           component={IgrejaTourism}
+          options={{ title: "Detalhes do ponto turístico" }}
+        />
+
+        <Stack.Screen
+          name="EmDesenvolvimento"
+          component={EmDesenvolvimento}
           options={{ title: "Detalhes do ponto turístico" }}
         />
       </Stack.Navigator>

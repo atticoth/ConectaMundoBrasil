@@ -10,33 +10,41 @@ import {
   Dimensions,
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { LinearGradient } from "expo-linear-gradient";
 
 const data = [
   {
     id: 1,
     title: "Contagem/MG",
-    description: "Descrição Contagem",
-    imageUrl: require("../assets/images/comerc.png"),
-    logoUrl: require("../assets/images/pracadagloria.jpg"),
+    description: "Patrocínio",
+    imageUrl: require("../assets/images/pracadagloria.jpg"),
+    sponsors: [
+      require("../assets/images/comerc.png"),
+      require("../assets/images/comerc.png"),
+    ],
     screen: "DetalhesContagem",
   },
-  // {
-  //   id: 2,
-  //   title: 'Água Boa/MT',
-  //   description: 'Descrição Água Boa',
-  //   imageUrl: require('./assets/images/comerc.png'),
-  //   logoUrl: require('./assets/images/saopaulo.jpg'),
-  //   screen: 'EmDesevolvimento',
-  // },
-  // {
-  //   id: 3,
-  //   title: 'Pirassununga/SP',
-  //   description: 'Descrição Pirassununga',
-  //   imageUrl: require('./assets/images/comerc.png'),
-  //   logoUrl: require('./assets/images/saopaulo.jpg'),
-  //   screen: 'EmDesevolvimento',
-  // },
+  {
+    id: 2,
+    title: "Água Boa/MT",
+    description: "Patrocínio",
+    imageUrl: require("../assets/images/image1.jpg"),
+    sponsors: [
+      require("../assets/images/comerc.png"),
+      require("../assets/images/comerc.png"),
+    ],
+    screen: "EmDesenvolvimento",
+  },
+  {
+    id: 3,
+    title: "Pirassununga/SP",
+    description: "Patrocínio",
+    imageUrl: require("../assets/images/image2.jpg"),
+    sponsors: [
+      require("../assets/images/comerc.png"),
+      require("../assets/images/comerc.png"),
+    ],
+    screen: "EmDesenvolvimento",
+  },
 ];
 
 export function TourismDetailsScreen() {
@@ -46,25 +54,12 @@ export function TourismDetailsScreen() {
     navigation.navigate(screen);
   };
 
-  /*const GradientBackground = () => (
-    <Svg height="100%" width="100%">
-      <LinearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-        <Stop offset="0%" stopColor="#003293" />
-        <Stop offset="50%" stopColor="#00134d" />
-        <Stop offset="100%" stopColor="#3f1048" />
-      </LinearGradient>
-      <Rect x="0" y="0" width="100%" height="100%" fill="url(#grad)" />
-    </Svg>
-    );*/
-  //}
-
   return (
     <ImageBackground
       source={require("../assets/images/fundo.jpeg")}
       style={{ flex: 1, justifyContent: "center" }}
     >
       <View style={styles.container}>
-        {/*<GradientBackground />*/}
         <ScrollView contentContainerStyle={styles.scrollContainer}>
           {data.map((item) => (
             <TouchableOpacity
@@ -72,16 +67,22 @@ export function TourismDetailsScreen() {
               style={styles.card}
               onPress={() => handleCardPress(item.screen)}
             >
-              <View style={styles.leftColumn}>
-                <Image source={item.logoUrl} style={styles.logo} />
+              <View style={styles.imageContainer}>
+                <Image source={item.imageUrl} style={styles.mainImage} />
               </View>
-              <View style={styles.rightColumn}>
+              <View style={styles.textContainer}>
                 <Text style={styles.title}>{item.title}</Text>
-                <Image
-                  source={item.imageUrl}
-                  style={styles.image}
-                  resizeMode="contain"
-                />
+                <Text style={styles.description}>{item.description}</Text>
+                <View style={styles.sponsorContainer}>
+                  {item.sponsors.map((sponsor, index) => (
+                    <Image
+                      key={index}
+                      source={sponsor}
+                      style={styles.sponsorLogo}
+                      resizeMode="contain"
+                    />
+                  ))}
+                </View>
               </View>
             </TouchableOpacity>
           ))}
@@ -92,10 +93,6 @@ export function TourismDetailsScreen() {
 }
 
 const styles = StyleSheet.create({
-  backgroundGradient: {
-    flex: 1,
-    justifyContent: "center",
-  },
   container: {
     flexGrow: 1,
     padding: Dimensions.get("window").width * 0.06,
@@ -109,18 +106,19 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "#ccc",
   },
-  leftColumn: {
+  imageContainer: {
     justifyContent: "center",
     alignItems: "center",
     marginRight: Dimensions.get("window").width * 0.04,
   },
-  logo: {
+  mainImage: {
     width: Dimensions.get("window").width * 0.23,
     height: Dimensions.get("window").width * 0.23,
-    borderRadius: 42,
+    borderRadius: Dimensions.get("window").width * 0.5,
   },
-  rightColumn: {
+  textContainer: {
     flex: 1,
+    justifyContent: "center",
   },
   title: {
     fontWeight: "bold",
@@ -131,11 +129,14 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: "#888",
   },
-  image: {
-    width: "auto",
+  sponsorContainer: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    marginTop: Dimensions.get("window").width * 0.02,
+  },
+  sponsorLogo: {
+    width: Dimensions.get("window").width * 0.2,
     height: Dimensions.get("window").width * 0.08,
-    borderRadius: 1,
-    marginTop: 10,
   },
 });
 
