@@ -11,7 +11,7 @@ import {
   Linking,
 } from "react-native";
 
-export function PracadaGloriaTourism({ navigation }) {
+export function QuilomboArturosTourism({ navigation }) {
   return (
     <ImageBackground
       source={require("../../../assets/images/fundo.jpeg")}
@@ -20,60 +20,31 @@ export function PracadaGloriaTourism({ navigation }) {
       <View style={styles.container}>
         <ScrollView contentContainerStyle={styles.scrollContainer}>
           <View style={styles.content}>
-            <Text style={styles.title}>Praça da Glória</Text>
+            <Text style={styles.title}>Comunidade Quilombola Arturos</Text>
             <View style={styles.imageContainer}>
               <Image
-                source={require("../../../assets/images/galeria/pracadagloria/pracadagloria.jpg")}
+                source={require("../../../assets/images/galeria/quilomboarturos/quilomboarturos5.jpg")}
                 style={styles.imageLarge}
                 resizeMode="cover"
               />
             </View>
             <Text style={styles.description}>
-              Localizada no coração de Contagem, a Praça Nossa Senhora da Glória
-              ou somente Praça da Glória, é parada obrigatória para quem vai ao
-              Eldorado. Um dos principais pontos turísticos e cartão postal da
-              cidade, foi escolhida pela comunidade como um dos principais
-              espaços públicos da região com o melhor paisagismo.
+              A Comunidade Quilombola dos Arturos, criada no século 19 e um dos
+              mais importantes símbolos de resistência da cultura negra em Minas
+              Gerais, reúne atualmente cerca de 500 descendentes e agregados do
+              casal Arthur Camilo Silvério (filho de escravos) e Carmelinda
+              Maria da Silva, em uma propriedade rural localizada na cidade de
+              Contagem, no entorno da capital do estado de Minas Gerais. Ao
+              longo do ano acontecem várias manifestações culturais e religiosas
+              afro-brasileiras no espaço, todas ligadas ao Congado. Para a
+              musicóloga Glaura Lucas, os rituais que ali acontecem são
+              considerados performances graças a aspectos como os cantos
+              entoados, o ritmo gerado pelas batidas dos tambores e o movimento
+              corporal dos congadeiros. A comunidade é uma das mais tradicionais
+              e importantes do estado. Os Arturos são os responsáveis por
+              diversas celebrações do município, como a Festa da Abolição e a
+              Festa de Nossa Senhora do Rosário.
             </Text>
-            <Text style={styles.description}>
-              A Praça leva o nome da Paróquia Nossa Senhora da Glória que fica
-              bem ali ao lado. Muito arborizada, é um espaço de natureza no meio
-              de uma urbanização movimentada. Conta com uma cascata de 7 metros
-              junto a um lago de águas transparentes que dá um toque de muito
-              charme ao local.
-            </Text>
-            <Text style={styles.description}>
-              É um dos mais tradicionais espaços públicos do município. É palco
-              de diversos eventos culturais como apresentações musicais e festas
-              populares. A Praça da Glória é um lugar muito frequentado,
-              principalmente aos finais de semana, por familiares e jovens que
-              procuram diversão. É um ponto de encontro para os moradores do
-              Eldorado e visitantes de toda a cidade. O espaço é muito bonito,
-              bem cuidado e arborizado. Conta com um viveiro de plantas, uma
-              cachoeira artificial e um pequeno parquinho.Tem ainda uma pista de
-              caminhada, academia ao ar livre, mesas para jogos de tabuleiro e
-              muitos brinquedos.
-            </Text>
-            <Text style={styles.description}>
-              É comum na Praça ver crianças brincando, pessoas descansando,
-              fazendo atividades físicas ou passeando com seus animais de
-              estimação. Em alguns dias da semana é comum encontrar barraquinhas
-              de comida e muitas outras atrações aos visitantes. Ao lado da
-              Praça fica o Complexo Esportivo Tutão, com várias quadras
-              esportivas e uma pista de skate. O espaço é referência de lazer e
-              entretenimento da região. Ideal para se praticar modalidades
-              esportivas como futebol, handebol, basquete, vôlei e peteca.
-            </Text>
-            <Text style={styles.description}>
-              A praça fica em uma localização privilegiada. Está situada bem no
-              centro do bairro Eldorado e ao lado do Big Shopping. Se for de
-              Metrô, basta descer na Estação Eldorado e andar alguns
-              quarteirões. Você ainda tem muitas linhas de ônibus à disposição
-              que passam próximo ao local. Por conta disso, é um ponto de
-              encontro da cidade de Contagem, recebendo visitantes de todos os
-              pontos do município para curtir suas atrações
-            </Text>
-            <Text style={styles.description}></Text>
           </View>
 
           <View style={styles.buttonContainer}>
@@ -86,9 +57,7 @@ export function PracadaGloriaTourism({ navigation }) {
             <TouchableOpacity
               style={[styles.button, styles.secondButton]}
               onPress={() =>
-                Linking.openURL(
-                  "https://maps.app.goo.gl/gsByZ1v9S3a1YTNs8"
-                )
+                Linking.openURL("https://maps.app.goo.gl/FhF7oVMzKx1isGfe8")
               }
             >
               <Text style={[styles.buttonText, styles.secondButtonText]}>
@@ -198,4 +167,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default PracadaGloriaTourism;
+export default QuilomboArturosTourism;

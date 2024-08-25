@@ -11,7 +11,7 @@ import {
   Linking,
 } from "react-native";
 
-export function PracadaGloriaTourism({ navigation }) {
+export function CasadaCulturaTourism({ navigation }) {
   return (
     <ImageBackground
       source={require("../../../assets/images/fundo.jpeg")}
@@ -20,60 +20,23 @@ export function PracadaGloriaTourism({ navigation }) {
       <View style={styles.container}>
         <ScrollView contentContainerStyle={styles.scrollContainer}>
           <View style={styles.content}>
-            <Text style={styles.title}>Praça da Glória</Text>
+            <Text style={styles.title}>Casa Da Cultura Nair Mendes</Text>
             <View style={styles.imageContainer}>
               <Image
-                source={require("../../../assets/images/galeria/pracadagloria/pracadagloria.jpg")}
+                source={require("../../../assets/images/galeria/casadacultura/casadacultura7.jpg")}
                 style={styles.imageLarge}
                 resizeMode="cover"
               />
             </View>
             <Text style={styles.description}>
-              Localizada no coração de Contagem, a Praça Nossa Senhora da Glória
-              ou somente Praça da Glória, é parada obrigatória para quem vai ao
-              Eldorado. Um dos principais pontos turísticos e cartão postal da
-              cidade, foi escolhida pela comunidade como um dos principais
-              espaços públicos da região com o melhor paisagismo.
+            Edificação construída no século XVIII, tradicionalmente conhecida como "Casa do Registro", é considerada a casa mais antiga da cidade e um dos núcleos de origem da antiga "Contagem das Abóboras".
             </Text>
             <Text style={styles.description}>
-              A Praça leva o nome da Paróquia Nossa Senhora da Glória que fica
-              bem ali ao lado. Muito arborizada, é um espaço de natureza no meio
-              de uma urbanização movimentada. Conta com uma cascata de 7 metros
-              junto a um lago de águas transparentes que dá um toque de muito
-              charme ao local.
+            A construção simboliza o "posto de registro" instalado na região das por volta de 1716. Restaurada em 1991 e tombada pelo Decreto 10.060 de 14 de dezembro de 1998. Atualmente é o Museu Histórico de Contagem e abriga o Departamento de História, Memória e Patrimônio Cultural do Município com significativo acervo documental sobre a história da cidade. Está aberto para visitações, pesquisas e outras ações voltadas para a educação patrimonial, com galeria para exposições e espaço para lançamento de livros, além de área aberta ao ar livre.
             </Text>
             <Text style={styles.description}>
-              É um dos mais tradicionais espaços públicos do município. É palco
-              de diversos eventos culturais como apresentações musicais e festas
-              populares. A Praça da Glória é um lugar muito frequentado,
-              principalmente aos finais de semana, por familiares e jovens que
-              procuram diversão. É um ponto de encontro para os moradores do
-              Eldorado e visitantes de toda a cidade. O espaço é muito bonito,
-              bem cuidado e arborizado. Conta com um viveiro de plantas, uma
-              cachoeira artificial e um pequeno parquinho.Tem ainda uma pista de
-              caminhada, academia ao ar livre, mesas para jogos de tabuleiro e
-              muitos brinquedos.
+            Em 2007, foi reconhecido pelo Instituto Histórico e Artístico Nacional (PHAN) como primeiro museu de Contagem. Endereço: Pr. Vereador Josias Belém, 1 - Centro.
             </Text>
-            <Text style={styles.description}>
-              É comum na Praça ver crianças brincando, pessoas descansando,
-              fazendo atividades físicas ou passeando com seus animais de
-              estimação. Em alguns dias da semana é comum encontrar barraquinhas
-              de comida e muitas outras atrações aos visitantes. Ao lado da
-              Praça fica o Complexo Esportivo Tutão, com várias quadras
-              esportivas e uma pista de skate. O espaço é referência de lazer e
-              entretenimento da região. Ideal para se praticar modalidades
-              esportivas como futebol, handebol, basquete, vôlei e peteca.
-            </Text>
-            <Text style={styles.description}>
-              A praça fica em uma localização privilegiada. Está situada bem no
-              centro do bairro Eldorado e ao lado do Big Shopping. Se for de
-              Metrô, basta descer na Estação Eldorado e andar alguns
-              quarteirões. Você ainda tem muitas linhas de ônibus à disposição
-              que passam próximo ao local. Por conta disso, é um ponto de
-              encontro da cidade de Contagem, recebendo visitantes de todos os
-              pontos do município para curtir suas atrações
-            </Text>
-            <Text style={styles.description}></Text>
           </View>
 
           <View style={styles.buttonContainer}>
@@ -87,7 +50,7 @@ export function PracadaGloriaTourism({ navigation }) {
               style={[styles.button, styles.secondButton]}
               onPress={() =>
                 Linking.openURL(
-                  "https://maps.app.goo.gl/gsByZ1v9S3a1YTNs8"
+                  "https://maps.app.goo.gl/1Z8GBjsZdDoPnmfk6"
                 )
               }
             >
@@ -198,4 +161,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default PracadaGloriaTourism;
+export default CasadaCulturaTourism;

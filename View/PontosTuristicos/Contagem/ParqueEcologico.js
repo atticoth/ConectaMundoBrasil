@@ -11,7 +11,7 @@ import {
   Linking,
 } from "react-native";
 
-export function PracadaGloriaTourism({ navigation }) {
+export function ParqueEcologicoTourism({ navigation }) {
   return (
     <ImageBackground
       source={require("../../../assets/images/fundo.jpeg")}
@@ -20,60 +20,32 @@ export function PracadaGloriaTourism({ navigation }) {
       <View style={styles.container}>
         <ScrollView contentContainerStyle={styles.scrollContainer}>
           <View style={styles.content}>
-            <Text style={styles.title}>Praça da Glória</Text>
+            <Text style={styles.title}>Parque Ecológico Fernão Dias</Text>
             <View style={styles.imageContainer}>
               <Image
-                source={require("../../../assets/images/galeria/pracadagloria/pracadagloria.jpg")}
+                source={require("../../../assets/images/galeria/pqecologico/pqecologico8.jpg")}
                 style={styles.imageLarge}
                 resizeMode="cover"
               />
             </View>
             <Text style={styles.description}>
-              Localizada no coração de Contagem, a Praça Nossa Senhora da Glória
-              ou somente Praça da Glória, é parada obrigatória para quem vai ao
-              Eldorado. Um dos principais pontos turísticos e cartão postal da
-              cidade, foi escolhida pela comunidade como um dos principais
-              espaços públicos da região com o melhor paisagismo.
+              A Área de Proteção Ambiental (APA) é uma extensa área natural
+              destinada à proteção e conservação dos atributos bióticos (fauna e
+              flora), estéticos ou culturais ali existentes, importantes para a
+              qualidade de vida da população.
             </Text>
             <Text style={styles.description}>
-              A Praça leva o nome da Paróquia Nossa Senhora da Glória que fica
-              bem ali ao lado. Muito arborizada, é um espaço de natureza no meio
-              de uma urbanização movimentada. Conta com uma cascata de 7 metros
-              junto a um lago de águas transparentes que dá um toque de muito
-              charme ao local.
+              O então apenas Parque Fernão Dias foi inaugurado em 1980, na
+              divisa entre Betim e Contagem. O local já foi um dos principais
+              pontos de cultura, esportes e lazer da região, principalmente para
+              a população de Contagem, porém fechado em 2012. Em 2016, a
+              Assembleia Legislativa de Minas Gerais aprovou por unanimidade a
+              criação da Área de Proteção Ambiental Fernão Dias. Possui uma área
+              aproximada de 1,3 milhões de metros quadrados, com pista de
+              caminhada, campo de futebol, playground, anfiteatro e áreas de
+              convivência. O parque é palco de vários eventos culturais e
+              esportivos.
             </Text>
-            <Text style={styles.description}>
-              É um dos mais tradicionais espaços públicos do município. É palco
-              de diversos eventos culturais como apresentações musicais e festas
-              populares. A Praça da Glória é um lugar muito frequentado,
-              principalmente aos finais de semana, por familiares e jovens que
-              procuram diversão. É um ponto de encontro para os moradores do
-              Eldorado e visitantes de toda a cidade. O espaço é muito bonito,
-              bem cuidado e arborizado. Conta com um viveiro de plantas, uma
-              cachoeira artificial e um pequeno parquinho.Tem ainda uma pista de
-              caminhada, academia ao ar livre, mesas para jogos de tabuleiro e
-              muitos brinquedos.
-            </Text>
-            <Text style={styles.description}>
-              É comum na Praça ver crianças brincando, pessoas descansando,
-              fazendo atividades físicas ou passeando com seus animais de
-              estimação. Em alguns dias da semana é comum encontrar barraquinhas
-              de comida e muitas outras atrações aos visitantes. Ao lado da
-              Praça fica o Complexo Esportivo Tutão, com várias quadras
-              esportivas e uma pista de skate. O espaço é referência de lazer e
-              entretenimento da região. Ideal para se praticar modalidades
-              esportivas como futebol, handebol, basquete, vôlei e peteca.
-            </Text>
-            <Text style={styles.description}>
-              A praça fica em uma localização privilegiada. Está situada bem no
-              centro do bairro Eldorado e ao lado do Big Shopping. Se for de
-              Metrô, basta descer na Estação Eldorado e andar alguns
-              quarteirões. Você ainda tem muitas linhas de ônibus à disposição
-              que passam próximo ao local. Por conta disso, é um ponto de
-              encontro da cidade de Contagem, recebendo visitantes de todos os
-              pontos do município para curtir suas atrações
-            </Text>
-            <Text style={styles.description}></Text>
           </View>
 
           <View style={styles.buttonContainer}>
@@ -86,9 +58,7 @@ export function PracadaGloriaTourism({ navigation }) {
             <TouchableOpacity
               style={[styles.button, styles.secondButton]}
               onPress={() =>
-                Linking.openURL(
-                  "https://maps.app.goo.gl/gsByZ1v9S3a1YTNs8"
-                )
+                Linking.openURL("https://maps.app.goo.gl/SNMM8CWp62ZWZeLF8")
               }
             >
               <Text style={[styles.buttonText, styles.secondButtonText]}>
@@ -198,4 +168,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default PracadaGloriaTourism;
+export default ParqueEcologicoTourism;

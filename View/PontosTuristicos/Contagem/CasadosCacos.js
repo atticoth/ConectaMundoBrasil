@@ -11,7 +11,7 @@ import {
   Linking,
 } from "react-native";
 
-export function PracadaGloriaTourism({ navigation }) {
+export function CasadosCacosTourism({ navigation }) {
   return (
     <ImageBackground
       source={require("../../../assets/images/fundo.jpeg")}
@@ -20,58 +20,51 @@ export function PracadaGloriaTourism({ navigation }) {
       <View style={styles.container}>
         <ScrollView contentContainerStyle={styles.scrollContainer}>
           <View style={styles.content}>
-            <Text style={styles.title}>Praça da Glória</Text>
+            <Text style={styles.title}>Casa dos Cacos</Text>
             <View style={styles.imageContainer}>
               <Image
-                source={require("../../../assets/images/galeria/pracadagloria/pracadagloria.jpg")}
+                source={require("../../../assets/images/galeria/casadoscacos/casadoscacos2.jpg")}
                 style={styles.imageLarge}
                 resizeMode="cover"
               />
             </View>
             <Text style={styles.description}>
-              Localizada no coração de Contagem, a Praça Nossa Senhora da Glória
-              ou somente Praça da Glória, é parada obrigatória para quem vai ao
-              Eldorado. Um dos principais pontos turísticos e cartão postal da
-              cidade, foi escolhida pela comunidade como um dos principais
-              espaços públicos da região com o melhor paisagismo.
+              Representação simbólica das várias identidades de Contagem, é a
+              única em sua tipologia no Brasil. Construção considerada única do
+              gênero no Brasil e equiparada à Capela de Ossos, na Igreja de São
+              Francisco, em Évora (Portugal), e as criações do arquiteto
+              espanhol Gaudí. Foi construída e customizada com mosaicos de louça
+              e cerâmica pelo geólogo Carlos Luís de Almeida a partir de1963 até
+              sua morte, em 1989.
             </Text>
             <Text style={styles.description}>
-              A Praça leva o nome da Paróquia Nossa Senhora da Glória que fica
-              bem ali ao lado. Muito arborizada, é um espaço de natureza no meio
-              de uma urbanização movimentada. Conta com uma cascata de 7 metros
-              junto a um lago de águas transparentes que dá um toque de muito
-              charme ao local.
+              Toda a casa , além de enfeites e alegorias, é feita de cacos
+              vindos das mais diversas procedências. As peças formam mosaicos
+              nas paredes do imóvel e esculturas de cachorros, cabras e uma
+              curiosa elefanta "Fifi". No banheiro da casa, a toalha é feita de
+              cacos. Nos quartos, sala, cama, televisão e rádio são revestidos.
+              Na sala de jantar, a mesa e o telefone são cobertos com pedaços de
+              vidros de várias cores.
             </Text>
             <Text style={styles.description}>
-              É um dos mais tradicionais espaços públicos do município. É palco
-              de diversos eventos culturais como apresentações musicais e festas
-              populares. A Praça da Glória é um lugar muito frequentado,
-              principalmente aos finais de semana, por familiares e jovens que
-              procuram diversão. É um ponto de encontro para os moradores do
-              Eldorado e visitantes de toda a cidade. O espaço é muito bonito,
-              bem cuidado e arborizado. Conta com um viveiro de plantas, uma
-              cachoeira artificial e um pequeno parquinho.Tem ainda uma pista de
-              caminhada, academia ao ar livre, mesas para jogos de tabuleiro e
-              muitos brinquedos.
+              Consta que alguns cacos seriam do Palácio do Planalto (presente da
+              mulher do ex-presidente Ernesto Geisel ao artista). Outro assíduo
+              fornecedor de cacos teria sido o proprietário do extinto Café
+              Pérola, na Praça 7, em Belo Horizonte. Consta, ainda, que, quando
+              vivo, o artista conseguiu divulgar as imagens da casa na imprensa,
+              especialmente em programas de televisão, como o do Chacrinha.
             </Text>
             <Text style={styles.description}>
-              É comum na Praça ver crianças brincando, pessoas descansando,
-              fazendo atividades físicas ou passeando com seus animais de
-              estimação. Em alguns dias da semana é comum encontrar barraquinhas
-              de comida e muitas outras atrações aos visitantes. Ao lado da
-              Praça fica o Complexo Esportivo Tutão, com várias quadras
-              esportivas e uma pista de skate. O espaço é referência de lazer e
-              entretenimento da região. Ideal para se praticar modalidades
-              esportivas como futebol, handebol, basquete, vôlei e peteca.
+              Ao visitar a casa, em 1976, o ex-presidente Juscelino Kubitschek,
+              escreveu: "Meu caro amigo Carlos, ao visitar a sua Casa de Cacos,
+              quando aí passei, galvanizou-me o coração sentimental e a alma
+              tornou-se imensamente inefável pela elevada beleza inaudita que
+              veio estuar-me e encantar-me, deixando-me profundamente
+              sensibilizado".
             </Text>
             <Text style={styles.description}>
-              A praça fica em uma localização privilegiada. Está situada bem no
-              centro do bairro Eldorado e ao lado do Big Shopping. Se for de
-              Metrô, basta descer na Estação Eldorado e andar alguns
-              quarteirões. Você ainda tem muitas linhas de ônibus à disposição
-              que passam próximo ao local. Por conta disso, é um ponto de
-              encontro da cidade de Contagem, recebendo visitantes de todos os
-              pontos do município para curtir suas atrações
+              A Casa dos Cacos foi adquirida pela Prefeitura de Contagem em 1991
+              e tombada conforme decreto 10.445, de 14 de abril de 2000.
             </Text>
             <Text style={styles.description}></Text>
           </View>
@@ -87,7 +80,7 @@ export function PracadaGloriaTourism({ navigation }) {
               style={[styles.button, styles.secondButton]}
               onPress={() =>
                 Linking.openURL(
-                  "https://maps.app.goo.gl/gsByZ1v9S3a1YTNs8"
+                  "https://maps.app.goo.gl/crAT2hSiErrDkYEH8"
                 )
               }
             >
@@ -198,4 +191,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default PracadaGloriaTourism;
+export default CasadosCacosTourism;
