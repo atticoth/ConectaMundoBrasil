@@ -18,8 +18,9 @@ const data = [
     description: "Patrocínio",
     imageUrl: require("../assets/images/pracadagloria.jpg"),
     sponsors: [
-      require("../assets/images/comerc.png"),
-      require("../assets/images/comerc.png"),
+      require("../assets/images/NewHolland.png"),
+      require("../assets/images/NewHollandConstruction.png"),
+      require("../assets/images/CNHCapital.png"),
     ],
     screen: "DetalhesContagem",
   },
@@ -27,10 +28,11 @@ const data = [
     id: 2,
     title: "Água Boa/MT",
     description: "Patrocínio",
-    imageUrl: require("../assets/images/image1.jpg"),
+    imageUrl: require("../assets/images/EmDesenvolvimento.png"),
     sponsors: [
-      require("../assets/images/comerc.png"),
-      require("../assets/images/comerc.png"),
+      require("../assets/images/CaseH.png"),
+      require("../assets/images/CaseConstruction.png"),
+      require("../assets/images/CNHCapital.png"),
     ],
     screen: "EmDesenvolvimento",
   },
@@ -38,10 +40,9 @@ const data = [
     id: 3,
     title: "Pirassununga/SP",
     description: "Patrocínio",
-    imageUrl: require("../assets/images/image2.jpg"),
+    imageUrl: require("../assets/images/EmDesenvolvimento.png"),
     sponsors: [
-      require("../assets/images/comerc.png"),
-      require("../assets/images/comerc.png"),
+      require("../assets/images/CompanhiaMullerBebidas.png"),
     ],
     screen: "EmDesenvolvimento",
   },
@@ -135,7 +136,7 @@ const styles = StyleSheet.create({
     marginTop: Dimensions.get("window").width * 0.02,
   },
   sponsorLogo: {
-    width: Dimensions.get("window").width * 0.2,
+    width: Dimensions.get("window").width * 0.17,
     height: Dimensions.get("window").width * 0.08,
   },
 });

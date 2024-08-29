@@ -32,7 +32,7 @@ function App() {
         <Stack.Screen
           name="InitialScreen"
           component={InitialScreen}
-          options={{ headerShown: false }}
+          options={{ headerShown: false, title: 'Início' }}
         />
         <Stack.Screen
           name="TourismDetailsScreen"

@@ -14,39 +14,39 @@ import {
 } from "react-native";
 
 const images = {
-  imagem1: require("../assets/images/galeria/pracadagloria/pracadagloria.jpg"),
-  imagem2: require("../assets/images/galeria/pracadagloria/pracadagloria2.jpg"),
-  imagem3: require("../assets/images/galeria/pracadagloria/pracadagloria3.jpg"),
-  imagem4: require("../assets/images/galeria/pracadagloria/pracadagloria4.jpg"),
+  imagem1: require("../assets/images/galeria/pracadagloria/pracadagloria6.jpg"),
+  imagem2: require("../assets/images/galeria/pracadagloria/pracadagloria5.jpg"),
+  imagem3: require("../assets/images/galeria/pracadagloria/pracadagloria4.jpg"),
+  imagem4: require("../assets/images/galeria/pracadagloria/pracadagloria7.jpg"),
 
   imagem5: require("../assets/images/galeria/casadoscacos/casadoscacos.jpg"),
-  imagem6: require("../assets/images/galeria/casadoscacos/casadoscacos2.jpg"),
-  imagem7: require("../assets/images/galeria/casadoscacos/casadoscacos3.jpg"),
-  imagem8: require("../assets/images/galeria/casadoscacos/casadoscacos4.jpg"),
+  imagem6: require("../assets/images/galeria/casadoscacos/casadoscacos8.jpg"),
+  imagem7: require("../assets/images/galeria/casadoscacos/casadoscacos4.jpg"),
+  imagem8: require("../assets/images/galeria/casadoscacos/casadoscacos7.jpg"),
 
-  imagem9: require("../assets/images/galeria/pqecologico/pqecologico.jpg"),
-  imagem10: require("../assets/images/galeria/pqecologico/pqecologico2.jpg"),
-  imagem11: require("../assets/images/galeria/pqecologico/pqecologico3.jpg"),
-  imagem12: require("../assets/images/galeria/pqecologico/pqecologico4.jpg"),
+  imagem9: require("../assets/images/galeria/pqecologico/pqecologico6.jpg"),
+  imagem10: require("../assets/images/galeria/pqecologico/pqecologico8.jpg"),
+  imagem11: require("../assets/images/galeria/pqecologico/pqecologico7.jpg"),
+  imagem12: require("../assets/images/galeria/pqecologico/pqecologico3.jpg"),
 
-  imagem13: require("../assets/images/galeria/igreja/igreja.jpg"),
+  imagem13: require("../assets/images/galeria/igreja/igreja6.jpg"),
   imagem14: require("../assets/images/galeria/igreja/igreja2.jpg"),
   imagem15: require("../assets/images/galeria/igreja/igreja3.jpg"),
-  imagem16: require("../assets/images/galeria/igreja/igreja4.jpg"),
+  imagem16: require("../assets/images/galeria/igreja/igreja.jpg"),
 
-  imagem17: require("../assets/images/galeria/quilomboarturos/quilomboarturos.jpg"),
-  imagem18: require("../assets/images/galeria/quilomboarturos/quilomboarturos2.jpg"),
-  imagem19: require("../assets/images/galeria/quilomboarturos/quilomboarturos5.jpg"),
-  imagem20: require("../assets/images/galeria/quilomboarturos/quilomboarturos4.jpg"),
+  imagem17: require("../assets/images/galeria/quilomboarturos/quilomboarturos7.jpg"),
+  imagem18: require("../assets/images/galeria/quilomboarturos/quilomboarturos8.jpg"),
+  imagem19: require("../assets/images/galeria/quilomboarturos/quilomboarturos.jpg"),
+  imagem20: require("../assets/images/galeria/quilomboarturos/quilomboarturos6.jpg"),
 
-  imagem21: require("../assets/images/galeria/casadacultura/casadacultura.jpg"),
-  imagem22: require("../assets/images/galeria/casadacultura/casadacultura2.jpg"),
-  imagem23: require("../assets/images/galeria/casadacultura/casadacultura5.jpg"),
-  imagem24: require("../assets/images/galeria/casadacultura/casadacultura4.jpg"),
+  imagem21: require("../assets/images/galeria/casadacultura/casadacultura2.jpg"),
+  imagem22: require("../assets/images/galeria/casadacultura/casadacultura.jpg"),
+  imagem23: require("../assets/images/galeria/casadacultura/casadacultura7.jpg"),
+  imagem24: require("../assets/images/galeria/casadacultura/casadacultura8.jpg"),
 
   imagem25: require("../assets/images/galeria/centrocultural/centrocultural.jpg"),
-  imagem26: require("../assets/images/galeria/centrocultural/centrocultural2.jpg"),
-  imagem27: require("../assets/images/galeria/centrocultural/centrocultural3.jpg"),
+  imagem26: require("../assets/images/galeria/centrocultural/centrocultural9.jpg"),
+  imagem27: require("../assets/images/galeria/centrocultural/centrocultural7.jpg"),
   imagem28: require("../assets/images/galeria/centrocultural/centrocultural4.jpg"),
 };
 
