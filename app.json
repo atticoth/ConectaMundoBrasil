@@ -2,7 +2,7 @@
   "expo": {
     "name": "ConectaMundoBrasil",
     "slug": "ConectaMundoBrasil",
-    "version": "1.0.0",
+    "version": "2.0.1",
     "orientation": "portrait",
     "icon": "./assets/images/iconeapp.png",
     "userInterfaceStyle": "light",
@@ -18,14 +18,18 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.conectamundo.ConectaMundoBrasil",
-      "buildNumber": "1"
+      "buildNumber": "2",
+      "infoPlist": {
+           "LSMinimumSystemVersion": "12.0"
+         }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/iconeapp.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.conectamundo.ConectaMundoBrasil"
+      "package": "com.conectamundo.ConectaMundoBrasil",
+      "versionCode": 2
     },
     "assetBundlePatterns": [
       "**/*"

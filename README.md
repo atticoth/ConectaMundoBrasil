@@ -62,4 +62,4 @@ Build para plataforma Android
 
 Build para plataforma iOS
 
-    eas build --platform android
+    eas build --platform ios
