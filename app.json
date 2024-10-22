@@ -2,7 +2,7 @@
   "expo": {
     "name": "ConectaMundoBrasil",
     "slug": "ConectaMundoBrasil",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "orientation": "portrait",
     "icon": "./assets/images/iconeapp.png",
     "userInterfaceStyle": "light",
@@ -18,7 +18,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.conectamundo.ConectaMundoBrasil",
-      "buildNumber": "2",
+      "buildNumber": "3",
       "infoPlist": {
            "LSMinimumSystemVersion": "12.0"
          }
