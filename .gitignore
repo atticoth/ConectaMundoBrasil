@@ -129,5 +129,6 @@ docs/pages/versions/*/react-native/*.diff
 # iOS
 **/ios/.xcode.env.local
 
+# Android and iOS folders for EAS Prebuild
 /android
 /ios

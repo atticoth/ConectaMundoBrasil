@@ -3,11 +3,13 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import { LoadingScreen } from "./View/LoadingScreen";
-import { InitialScreen } from "./View/InitialScreen";
 import { TourismDetailsScreen } from "./View/TourismDetailsScreen";
 import { DetalhesContagem } from "./View/DetalhesContagem";
+import { DetalhesAguaBoa } from "./View/DetalhesAguaBoa";
 import { DetailsScreenContagem } from "./View/DetailsScreenContagem";
+import { DetailsScreenAguaBoa } from "./View/DetailsScreenAguaBoa";
 import { AtracoesContagem } from "./View/AtracoesContagem";
+import { AtracoesAguaBoa } from "./View/AtracoesAguaBoa";
 import { PracadaGloriaTourism } from "./View/PontosTuristicos/Contagem/PracadaGloria";
 import { CasadosCacosTourism } from "./View/PontosTuristicos/Contagem/CasadosCacos";
 import { CentroCulturalTourism } from "./View/PontosTuristicos/Contagem/CentroCultural";
@@ -15,6 +17,11 @@ import { CasadaCulturaTourism } from "./View/PontosTuristicos/Contagem/CasadaCul
 import { ParqueEcologicoTourism } from "./View/PontosTuristicos/Contagem/ParqueEcologico";
 import { QuilomboArturosTourism } from "./View/PontosTuristicos/Contagem/QuilombolaArturos";
 import { IgrejaTourism } from "./View/PontosTuristicos/Contagem/IgrejaSaoGoncalo";
+import { ParqueIpesTourism } from "./View/PontosTuristicos/AguaBoa/ParqueIpes";
+import { ParoquiaTourism } from "./View/PontosTuristicos/AguaBoa/Paroquia";
+import { PracaCulturaTourism } from "./View/PontosTuristicos/AguaBoa/PracaCultura";
+import { PracaLazerTourism } from "./View/PontosTuristicos/AguaBoa/PracaLazer";
+import { LagoaBuritisTourism } from "./View/PontosTuristicos/AguaBoa/LagoaBuritis";
 
 import { EmDesenvolvimento } from "./View/EmDesenvolvimento";
 
@@ -30,11 +37,6 @@ function App() {
           options={{ headerShown: false }}
         />
         <Stack.Screen
-          name="InitialScreen"
-          component={InitialScreen}
-          options={{ headerShown: false, title: 'Início' }}
-        />
-        <Stack.Screen
           name="TourismDetailsScreen"
           component={TourismDetailsScreen}
           options={{ title: "Cidades" }}
@@ -45,13 +47,28 @@ function App() {
           options={{ title: "Detalhes" }}
         />
         <Stack.Screen
+          name="DetalhesAguaBoa"
+          component={DetalhesAguaBoa}
+          options={{ title: "Detalhes" }}
+        />
+        <Stack.Screen
           name="DetailsScreenContagem"
           component={DetailsScreenContagem}
           options={{ title: "Pontos Turísticos" }}
         />
         <Stack.Screen
+          name="DetailsScreenAguaBoa"
+          component={DetailsScreenAguaBoa}
+          options={{ title: "Pontos Turísticos" }}
+        />
+        <Stack.Screen
           name="AtracoesContagem"
           component={AtracoesContagem}
+          options={{ title: "Atrações Turísticos" }}
+        />
+        <Stack.Screen
+          name="AtracoesAguaBoa"
+          component={AtracoesAguaBoa}
           options={{ title: "Atrações Turísticos" }}
         />
         <Stack.Screen
@@ -87,6 +104,31 @@ function App() {
         <Stack.Screen
           name="IgrejaTourism"
           component={IgrejaTourism}
+          options={{ title: "Detalhes do ponto turístico" }}
+        />
+        <Stack.Screen
+          name="ParqueIpesTourism"
+          component={ParqueIpesTourism}
+          options={{ title: "Detalhes do ponto turístico" }}
+        />
+        <Stack.Screen
+          name="ParoquiaTourism"
+          component={ParoquiaTourism}
+          options={{ title: "Detalhes do ponto turístico" }}
+        />
+        <Stack.Screen
+          name="PracaCulturaTourism"
+          component={PracaCulturaTourism}
+          options={{ title: "Detalhes do ponto turístico" }}
+        />
+        <Stack.Screen
+          name="PracaLazerTourism"
+          component={PracaLazerTourism}
+          options={{ title: "Detalhes do ponto turístico" }}
+        />
+        <Stack.Screen
+          name="LagoaBuritisTourism"
+          component={LagoaBuritisTourism}
           options={{ title: "Detalhes do ponto turístico" }}
         />
 

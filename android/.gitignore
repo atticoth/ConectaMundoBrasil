@@ -15,5 +15,6 @@ local.properties
 # Bundle artifacts
 *.jsbundle
 
+# Android and iOS folders for EAS Prebuild
 /android
 /ios

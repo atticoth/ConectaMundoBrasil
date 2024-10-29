@@ -23,19 +23,19 @@ const data = [
       require("../assets/images/CNHCapital.png"),
     ],
     screen: "DetalhesContagem",
-  }
-  // {
-  //   id: 2,
-  //   title: "Água Boa/MT",
-  //   description: "Patrocínio",
-  //   imageUrl: require("../assets/images/EmDesenvolvimento.png"),
-  //   sponsors: [
-  //     require("../assets/images/CaseH.png"),
-  //     require("../assets/images/CaseConstruction.png"),
-  //     require("../assets/images/CNHCapital.png"),
-  //   ],
-  //   screen: "EmDesenvolvimento",
-  // },
+  },
+  {
+    id: 2,
+    title: "Água Boa/MT",
+    description: "Patrocínio",
+    imageUrl: require("../assets/images/aguaBoaIcon.jpeg"),
+    sponsors: [
+      require("../assets/images/CaseH.png"),
+      require("../assets/images/CaseConstruction.png"),
+      require("../assets/images/CNHCapital.png"),
+    ],
+    screen: "DetalhesAguaBoa",
+  },
   // {
   //   id: 3,
   //   title: "Pirassununga/SP",

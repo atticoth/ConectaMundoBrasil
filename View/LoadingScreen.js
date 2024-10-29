@@ -5,7 +5,7 @@ import { Image, ActivityIndicator, View, StyleSheet, Dimensions, ImageBackground
 export function LoadingScreen({ navigation }) {
   useEffect(() => {
     setTimeout(() => {
-      navigation.navigate('InitialScreen');
+      navigation.navigate('TourismDetailsScreen');
     }, 4000);
   }, []);
 

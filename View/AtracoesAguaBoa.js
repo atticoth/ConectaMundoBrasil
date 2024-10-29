@@ -14,43 +14,33 @@ import {
 } from "react-native";
 
 const images = {
-  imagem1: require("../assets/images/galeria/pracadagloria/pracadagloria6.jpg"),
-  imagem2: require("../assets/images/galeria/pracadagloria/pracadagloria5.jpg"),
-  imagem3: require("../assets/images/galeria/pracadagloria/pracadagloria4.jpg"),
-  imagem4: require("../assets/images/galeria/pracadagloria/pracadagloria7.jpg"),
+  imagem1: require("../assets/images/galeria/paroquia/igreja1.jpg"),
+  imagem2: require("../assets/images/galeria/paroquia/igreja4.jpg"),
+  imagem3: require("../assets/images/galeria/paroquia/igreja2.jpg"),
+  imagem4: require("../assets/images/galeria/paroquia/igreja3.jpg"),
 
-  imagem5: require("../assets/images/galeria/casadoscacos/casadoscacos.jpg"),
-  imagem6: require("../assets/images/galeria/casadoscacos/casadoscacos8.jpg"),
-  imagem7: require("../assets/images/galeria/casadoscacos/casadoscacos4.jpg"),
-  imagem8: require("../assets/images/galeria/casadoscacos/casadoscacos7.jpg"),
+  imagem5: require("../assets/images/galeria/cultura/CEL06419.jpg"),
+  imagem6: require("../assets/images/galeria/cultura/CEL06421.jpg"),
+  imagem7: require("../assets/images/galeria/cultura/CEL06417.jpg"),
+  imagem8: require("../assets/images/galeria/cultura/CEL06416.jpg"),
 
-  imagem9: require("../assets/images/galeria/pqecologico/pqecologico6.jpg"),
-  imagem10: require("../assets/images/galeria/pqecologico/pqecologico8.jpg"),
-  imagem11: require("../assets/images/galeria/pqecologico/pqecologico7.jpg"),
-  imagem12: require("../assets/images/galeria/pqecologico/pqecologico3.jpg"),
+  imagem9: require("../assets/images/galeria/ipes/ipes1.jpg"),
+  imagem10: require("../assets/images/galeria/ipes/ipes3.jpg"),
+  imagem11: require("../assets/images/galeria/ipes/ipes4.jpg"),
+  imagem12: require("../assets/images/galeria/ipes/ipes2.jpg"),
 
-  imagem13: require("../assets/images/galeria/igreja/igreja6.jpg"),
-  imagem14: require("../assets/images/galeria/igreja/igreja2.jpg"),
-  imagem15: require("../assets/images/galeria/igreja/igreja3.jpg"),
-  imagem16: require("../assets/images/galeria/igreja/igreja.jpg"),
+  imagem13: require("../assets/images/galeria/buritis/buritis2.jpg"),
+  imagem14: require("../assets/images/galeria/buritis/buritis4.jpg"),
+  imagem15: require("../assets/images/galeria/buritis/buritis.jpg"),
+  imagem16: require("../assets/images/galeria/buritis/buritis3.jpg"),
 
-  imagem17: require("../assets/images/galeria/quilomboarturos/quilomboarturos7.jpg"),
-  imagem18: require("../assets/images/galeria/quilomboarturos/quilomboarturos8.jpg"),
-  imagem19: require("../assets/images/galeria/quilomboarturos/quilomboarturos.jpg"),
-  imagem20: require("../assets/images/galeria/quilomboarturos/quilomboarturos6.jpg"),
-
-  imagem21: require("../assets/images/galeria/casadacultura/casadacultura2.jpg"),
-  imagem22: require("../assets/images/galeria/casadacultura/casadacultura.jpg"),
-  imagem23: require("../assets/images/galeria/casadacultura/casadacultura7.jpg"),
-  imagem24: require("../assets/images/galeria/casadacultura/casadacultura8.jpg"),
-
-  imagem25: require("../assets/images/galeria/centrocultural/centrocultural.jpg"),
-  imagem26: require("../assets/images/galeria/centrocultural/centrocultural9.jpg"),
-  imagem27: require("../assets/images/galeria/centrocultural/centrocultural7.jpg"),
-  imagem28: require("../assets/images/galeria/centrocultural/centrocultural4.jpg"),
+  imagem17: require("../assets/images/galeria/lazer/lazer2.jpg"),
+  imagem18: require("../assets/images/galeria/lazer/lazer3.jpg"),
+  imagem19: require("../assets/images/galeria/lazer/lazer4.jpg"),
+  imagem20: require("../assets/images/galeria/lazer/lazer1.jpg"),
 };
 
-export const AtracoesContagem = ({ navigation }) => {
+export const AtracoesAguaBoa = ({ navigation }) => {
   const windowWidth = useWindowDimensions().width;
   const [modalVisible, setModalVisible] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -63,23 +53,19 @@ export const AtracoesContagem = ({ navigation }) => {
   const renderImages = () => {
     const renderedImages = [];
 
-    for (let i = 1; i <= 28; i++) {
+    for (let i = 1; i <= 20; i++) {
       let textToRender = "";
 
       if (i === 1) {
-        (textToRender = "Praça da Glória"), i;
+        (textToRender = "Igreja Matriz Nossa Sra Aparecida"), i;
       } else if (i === 5) {
-        textToRender = "Casa dos Cacos";
+        textToRender = "Praça da Cultura";
       } else if (i === 9) {
-        textToRender = "Parque Ecológico Fernão Dias";
+        textToRender = "Parque dos Ipês";
       } else if (i === 13) {
-        textToRender = "Igreja São Gonçalo";
+        textToRender = "Lagoa dos Buritis";
       } else if (i === 17) {
-        textToRender = "Centro Quilombola dos Arturos";
-      } else if (i === 21) {
-        textToRender = "Casa da Cultura Nair Mendes Moreira";
-      } else if (i === 25) {
-        textToRender = "Centro Cultural";
+        textToRender = "Praça do Lazer";
       } else {
         textToRender = "";
       }
@@ -132,7 +118,7 @@ export const AtracoesContagem = ({ navigation }) => {
       style={{ flex: 1, justifyContent: "center" }}
     >
       <View style={styles.container}>
-        <Text style={styles.title}>Galeria de imagens Contagem - MG</Text>
+        <Text style={styles.title}>Galeria de imagens Água Boa - MT</Text>
 
         <Modal
           visible={modalVisible}
@@ -200,7 +186,7 @@ export const AtracoesContagem = ({ navigation }) => {
           </TouchableOpacity>
           <TouchableOpacity
             style={[styles.button, styles.secondButton]}
-            onPress={() => navigation.navigate("DetailsScreenContagem")}
+            onPress={() => navigation.navigate("DetailsScreenAguaBoa")}
           >
             <Text style={[styles.buttonText, styles.secondButtonText]}>
               Mais detalhes
@@ -294,4 +280,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default AtracoesContagem;
+export default AtracoesAguaBoa;
