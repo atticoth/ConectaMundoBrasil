@@ -1,23 +1,31 @@
 # Expo
-.expo
-__generated__
-web-build
-bare-apps
-
-# macOS
-.DS_Store
+.expo/
+__generated__/
+web-build/
+bare-apps/
+dist/
+.client-builds/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+apps/bare-expo/deploy-url.txt
 
 # Node
-node_modules
-npm-debug.log
-yarn-error.log
+node_modules/
+npm-debug.*
+yarn-debug.*
+yarn-error.*
 
-# Ruby
-.direnv
+# MacOS
+.DS_Store
+*.pem
 
-# Env
+# Environment & Local Config
 .envrc.local
+.env*.local
 
+# Editors
 # Emacs
 *~
 
@@ -29,55 +37,34 @@ yarn-error.log
 
 # VS Code
 .vscode/launch.json
+.history/
 
 # Sublime Text
 *.sublime-project
 *.sublime-workspace
+
+# Android Studio / IDEA
+*.iml
+.gradle/
+.idea/
+.android/logcat.txt
 
 # Xcode
 *.pbxuser
 !default.pbxuser
 *.xccheckout
 *.xcscmblueprint
-xcuserdata
-
-# IDEA / Android Studio
-*.iml
-.gradle
-.idea
-
-# Eclipse
-.project
-.settings
-
-# VSCode
-.history/
-/vscode/launch.json
+xcuserdata/
+**/ios/.xcode.env.local
 
 # Android
 *.apk
 *.hprof
 ReactAndroid-temp.aar
 
-# Tools
-jarjar-rules.txt
-
-# Dynamic Macros
+# Temporary & Dynamic Files
+.metro-health-check*
 .kernel-ngrok-url
-
-# Template files
-/apps/bare-expo/android/app/google-services.json
-/apps/bare-expo/ios/BareExpo/GoogleService-Info.plist
-
-# Template projects
-templates/**/android/**/generated/*
-templates/**/android/app/build
-templates/**/Pods/**
-templates/**/Podfile.lock
-templates/**/yarn.lock
-
-# Codemod
-.codemod.bookmark
 
 # Fastlane
 /*.cer
@@ -85,40 +72,29 @@ templates/**/yarn.lock
 /fastlane/Preview.html
 /fastlane/Deployment
 /fastlane/test_output
-/Preview.html
 /gc_keys.json
 /fastlane/gc_keys.json
 
 # CI
 /android/logcat.txt
 
-# Shell apps
+# Shell Apps & Artifacts
 android-shell-app
 shellAppBase-*
 shellAppIntermediates
 shellAppWorkspaces
 /artifacts/*
 
-# Expo Client builds
-/client-builds
+# Codemod
+.codemod.bookmark
 
-# Expo web env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-apps/bare-expo/deploy-url.txt
-
-# Temporary files created by Metro to check the health of the file watcher
-.metro-health-check*
-
-# Expo Doc merging
+# Expo Docs
 docs/pages/versions/*/react-native/ADDED_*.md
 docs/pages/versions/*/react-native/REMOVED_*.md
 docs/pages/versions/*/react-native/*.diff
 
 # Expo Go
-/apps/expo-go/src/dist
+/apps/expo-go/src/dist/
 
 # Prebuilds
 /packages/**/*.xcframework
@@ -126,9 +102,26 @@ docs/pages/versions/*/react-native/*.diff
 /packages/**/Info-generated.plist
 !crsqlite.xcframework
 
-# iOS
-**/ios/.xcode.env.local
+# Template Files & Projects
+/apps/bare-expo/android/app/google-services.json
+/apps/bare-expo/ios/BareExpo/GoogleService-Info.plist
+templates/**/android/**/generated/*
+templates/**/android/app/build/
+templates/**/Pods/**
+templates/**/Podfile.lock
+templates/**/yarn.lock
 
-# Android and iOS folders for EAS Prebuild
+# iOS and Android folders for EAS Prebuild
 /android
 /ios
+
+# Native Files
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# TypeScript
+*.tsbuildinfo
