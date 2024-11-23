@@ -36,16 +36,16 @@ const data = [
     ],
     screen: "DetalhesAguaBoa",
   },
-  // {
-  //   id: 3,
-  //   title: "Pirassununga/SP",
-  //   description: "Patrocínio",
-  //   imageUrl: require("../assets/images/EmDesenvolvimento.png"),
-  //   sponsors: [
-  //     require("../assets/images/CompanhiaMullerBebidas.png"),
-  //   ],
-  //   screen: "EmDesenvolvimento",
-  // },
+  {
+    id: 3,
+    title: "Pirassununga/SP",
+    description: "Patrocínio",
+    imageUrl: require("../assets/images/pirassunungaicon.jpg"),
+    sponsors: [
+      require("../assets/images/CompanhiaMullerBebidas.png"),
+    ],
+    screen: "DetalhesPirassununga",
+  },
 ];
 
 export function TourismDetailsScreen() {
