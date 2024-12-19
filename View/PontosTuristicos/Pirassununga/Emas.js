@@ -14,7 +14,7 @@ import {
 export function EmasTourism({ navigation }) {
   return (
     <ImageBackground
-      source={require("../../../assets/images/fundo.jpeg")}
+      source={require("../../..//assets/images/fundo.jpeg")}
       style={{ flex: 1, justifyContent: "center" }}
     >
       <View style={styles.container}>
