@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "ConectaMundoBrasil",
-    "slug": "ConectaMundoBrasil",
-    "version": "2.2.0",
+    "name": "Conecta Mundo",
+    "slug": "conectamundo",
+    "version": "4.0.1",
     "orientation": "portrait",
     "icon": "./assets/images/iconeapp.png",
     "userInterfaceStyle": "light",
@@ -18,8 +18,8 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.conectamundo.ConectaMundoBrasil",
-      "buildNumber": "5",
+      "bundleIdentifier": "com.medeirosge.conectamundo",
+      "buildNumber": "7",
       "infoPlist": {
            "LSMinimumSystemVersion": "12.0"
          }
@@ -29,7 +29,7 @@
         "foregroundImage": "./assets/images/iconeapp.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.conectamundo.ConectaMundoBrasil",
+      "package": "com.medeirosge.conectamundo",
       "versionCode": 5
     },
     "assetBundlePatterns": [
@@ -40,10 +40,10 @@
     },
     "extra": {
       "eas": {
-        "projectId": "1e913142-e1c4-48df-a2ed-735fafa9d5d8"
+        "projectId": "e20d9bed-97e5-430e-b35e-6358d2e9f279"
       }
     },
-    "owner": "conectamundo",
+    "owner": "medeirosge",
     "plugins": [
       "expo-build-properties"
     ]
