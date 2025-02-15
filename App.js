@@ -54,10 +54,36 @@ import { PontoTuristico9 } from "./View/ConectaMundo/PontoTuristico9";
 import { PontoTuristico10 } from "./View/ConectaMundo/PontoTuristico10";
 import { PontoTuristico11 } from "./View/ConectaMundo/PontoTuristico11";
 import { GaleriaDeImagens1 } from "./View/ConectaMundo/GaleriaDeImagens1";
-import { MapScreen1 } from "./View/ConectaMundo/MapScreen1";
 import { AtracoesCastilho } from "./View/ConectaMundo/AtracoesCastilho";
 import { AtracoesSaoPaulo } from "./View/ConectaMundo/AtracoesSaoPaulo";
 import { TourismDetailsScreenConectaMundo } from "./View/ConectaMundo/TourismDetailsScreenConectaMundo";
+
+//ConectaAi
+import { HomeScreen } from './View/ConectaAi/HomeScreen';
+import { DetailsScreenOlimpia } from './View/ConectaAi/DetailsScreenOlimpia';
+import { DetailsScreenDiadema } from './View/ConectaAi/DetailsScreenDiadema';
+import { DetalhesOlimpia } from './View/ConectaAi/DetalhesOlimpia';
+import { DetalhesDiadema } from './View/ConectaAi/DetalhesDiadema';
+import { TouristAttraction1 } from './View/ConectaAi/TouristAttraction1';
+import { TouristAttraction2 } from './View/ConectaAi/TouristAttraction2';
+import { TouristAttraction3 } from './View/ConectaAi/TouristAttraction3';
+import { TouristAttraction4 } from './View/ConectaAi/TouristAttraction4';
+import { TouristAttraction5 } from './View/ConectaAi/TouristAttraction5';
+import { TouristAttraction6 } from './View/ConectaAi/TouristAttraction6';
+import { TouristAttraction7 } from './View/ConectaAi/TouristAttraction7';
+import { TouristAttraction8 } from './View/ConectaAi/TouristAttraction8';
+import { TouristAttraction9 } from './View/ConectaAi/TouristAttraction9';
+import { TouristAttraction10 } from './View/ConectaAi/TouristAttraction10';
+import { TouristAttraction11 } from './View/ConectaAi/TouristAttraction11';
+import { TouristAttraction12 } from './View/ConectaAi/TouristAttraction12';
+import { MapScreen1 } from './View/ConectaAi/MapScreen1';
+import { MapScreen2 } from './View/ConectaAi/MapScreen2';
+import { MapScreen3 } from './View/ConectaAi/MapScreen3';
+import { MapScreen4 } from './View/ConectaAi/MapScreen4';
+import { MapScreen5 } from './View/ConectaAi/MapScreen5';
+import { MapScreen6 } from './View/ConectaAi/MapScreen6';
+import { AtracoesOlimpia } from './View/ConectaAi/AtracoesOlimpia.js';
+import { AtracoesDiadema } from './View/ConectaAi/AtracoesDiadema.js';
 const Stack = createNativeStackNavigator();
 
 function App() {
@@ -246,11 +272,6 @@ function App() {
           options={{ title: "Detalhes do ponto turístico" }}
         />
         <Stack.Screen
-          name="MapScreen1"
-          component={MapScreen1}
-          options={{ title: "Localização" }}
-        />
-        <Stack.Screen
           name="GaleriaDeImagens1"
           component={GaleriaDeImagens1}
           options={{ title: "Galeria de imagens" }}
@@ -330,6 +351,34 @@ function App() {
           component={DetalhesSaoPaulo}
           options={{ title: "Detalhes sobre São Paulo" }}
         />
+
+        {/* ConectaAi */}
+        
+        <Stack.Screen name="HomeScreen" component={HomeScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="DetalhesOlimpia" component={DetalhesOlimpia} options={{ title: 'Detalhes sobre Olímpia - SP' }} />
+        <Stack.Screen name="DetalhesDiadema" component={DetalhesDiadema} options={{ title: 'Detalhes sobre Diadema - SP' }} />
+        <Stack.Screen name="DetailsScreenOlimpia" component={DetailsScreenOlimpia} options={{ title: 'Detalhes sobre Olímpia - SP' }} />
+        <Stack.Screen name="DetailsScreenDiadema" component={DetailsScreenDiadema} options={{ title: 'Detalhes sobre Diadema - SP' }} />
+        <Stack.Screen name="AtracoesOlimpia" component={AtracoesOlimpia} options={{ title: 'Atrações turísticas' }} />
+        <Stack.Screen name="AtracoesDiadema" component={AtracoesDiadema} options={{ title: 'Atrações turísticas' }} />
+        <Stack.Screen name="TouristAttraction1" component={TouristAttraction1} options={{ title: 'Detalhes do ponto turístico' }} />
+        <Stack.Screen name="TouristAttraction2" component={TouristAttraction2} options={{ title: 'Detalhes do ponto turístico' }} />
+        <Stack.Screen name="TouristAttraction3" component={TouristAttraction3} options={{ title: 'Detalhes do ponto turístico' }} />
+        <Stack.Screen name="TouristAttraction4" component={TouristAttraction4} options={{ title: 'Detalhes do ponto turístico' }} />
+        <Stack.Screen name="TouristAttraction5" component={TouristAttraction5} options={{ title: 'Detalhes do ponto turístico' }} />
+        <Stack.Screen name="TouristAttraction6" component={TouristAttraction6} options={{ title: 'Detalhes do ponto turístico' }} />
+        <Stack.Screen name="TouristAttraction7" component={TouristAttraction7} options={{ title: 'Detalhes do ponto turístico' }} />
+        <Stack.Screen name="TouristAttraction8" component={TouristAttraction8} options={{ title: 'Detalhes do ponto turístico' }} />
+        <Stack.Screen name="TouristAttraction9" component={TouristAttraction9} options={{ title: 'Detalhes do ponto turístico' }} />
+        <Stack.Screen name="TouristAttraction10" component={TouristAttraction10} options={{ title: 'Detalhes do ponto turístico' }} />
+        <Stack.Screen name="TouristAttraction11" component={TouristAttraction11} options={{ title: 'Detalhes do ponto turístico' }} />
+        <Stack.Screen name="TouristAttraction12" component={TouristAttraction12} options={{ title: 'Detalhes do ponto turístico' }} />
+        <Stack.Screen name="MapScreen1" component={MapScreen1} options={{ title: 'Localização' }} />
+        <Stack.Screen name="MapScreen2" component={MapScreen2} options={{ title: 'Localização' }} />
+        <Stack.Screen name="MapScreen3" component={MapScreen3} options={{ title: 'Localização' }} />
+        <Stack.Screen name="MapScreen4" component={MapScreen4} options={{ title: 'Localização' }} />
+        <Stack.Screen name="MapScreen5" component={MapScreen5} options={{ title: 'Localização' }} />
+        <Stack.Screen name="MapScreen6" component={MapScreen6} options={{ title: 'Localização' }} />
       </Stack.Navigator>
     </NavigationContainer>
   );

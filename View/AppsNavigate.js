@@ -16,13 +16,19 @@ const data = [
     id: 1,
     title: "Conecta Mundo",
     imageUrl: require("../assets/images/iconeapp_conectamundo.png"),
-    screen: "LoadingScreenConectaMundo",
+    screen: "TourismDetailsScreenConectaMundo",
   },
   {
     id: 2,
     title: "Conecta Mundo Brasil",
     imageUrl: require("../assets/images/iconeapp_conectamundobrasil.png"),
-    screen: "LoadingScreenConectaMundoBrasil",
+    screen: "TourismDetailsScreenConectaMundoBrasil",
+  },
+  {
+    id: 3,
+    title: "Conecta Ai",
+    imageUrl: require("../assets/images/icone_conectaai.png"),
+    screen: "HomeScreen",
   }
 ];
 

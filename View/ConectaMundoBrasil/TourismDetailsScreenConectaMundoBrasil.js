@@ -55,6 +55,10 @@ export function TourismDetailsScreenConectaMundoBrasil() {
     navigation.navigate(screen);
   };
 
+  const handleNavigateBack = () => {
+    navigation.navigate('AppsNavigate');
+  };
+
   return (
     <ImageBackground
       source={require("../../assets/images/fundo.jpeg")}
@@ -88,6 +92,10 @@ export function TourismDetailsScreenConectaMundoBrasil() {
             </TouchableOpacity>
           ))}
         </ScrollView>
+        {/* Botão NavigateBack */}
+        <TouchableOpacity style={styles.navigateBackButton} onPress={handleNavigateBack}>
+          <Text style={styles.navigateBackButtonText}>Voltar Seleção Apps</Text>
+        </TouchableOpacity>
       </View>
     </ImageBackground>
   );
@@ -138,6 +146,18 @@ const styles = StyleSheet.create({
   sponsorLogo: {
     width: Dimensions.get("window").width * 0.17,
     height: Dimensions.get("window").width * 0.08,
+  },
+  navigateBackButton: {
+    backgroundColor: '#003293',
+    padding: 15,
+    borderRadius: 10,
+    alignItems: 'center',
+    marginTop: 20,
+  },
+  navigateBackButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
   },
 });
 

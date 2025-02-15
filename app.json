@@ -2,7 +2,7 @@
   "expo": {
     "name": "Conecta Mundo",
     "slug": "conectamundo",
-    "version": "4.0.1",
+    "version": "4.1.0",
     "orientation": "portrait",
     "icon": "./assets/images/iconeapp.png",
     "userInterfaceStyle": "light",
@@ -19,7 +19,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.medeirosge.conectamundo",
-      "buildNumber": "7",
+      "buildNumber": "10",
       "infoPlist": {
            "LSMinimumSystemVersion": "12.0"
          }

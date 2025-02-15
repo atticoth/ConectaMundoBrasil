@@ -29,17 +29,9 @@ export function TourismDetailsScreenConectaMundo() {
     navigation.navigate(screen);
   };
 
-    /*const GradientBackground = () => (
-    <Svg height="100%" width="100%">
-      <LinearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-        <Stop offset="0%" stopColor="#003293" />
-        <Stop offset="50%" stopColor="#00134d" />
-        <Stop offset="100%" stopColor="#3f1048" />
-      </LinearGradient>
-      <Rect x="0" y="0" width="100%" height="100%" fill="url(#grad)" />
-    </Svg>
-    );*/
-  //}
+  const handleNavigateBack = () => {
+    navigation.navigate('AppsNavigate');
+  };
 
   return (
     <LinearGradient
@@ -65,6 +57,10 @@ export function TourismDetailsScreenConectaMundo() {
           </TouchableOpacity>
         ))}
       </ScrollView>
+      {/* Botão NavigateBack */}
+      <TouchableOpacity style={styles.navigateBackButton} onPress={handleNavigateBack}>
+        <Text style={styles.navigateBackButtonText}>Voltar Seleção Apps</Text>
+      </TouchableOpacity>
     </View>
     </LinearGradient>
   );
@@ -115,6 +111,18 @@ const styles = StyleSheet.create({
     height: Dimensions.get('window').width * 0.08,
     borderRadius: 1,
     marginTop: 10,
+  },
+  navigateBackButton: {
+    backgroundColor: '#003293',
+    padding: 15,
+    borderRadius: 10,
+    alignItems: 'center',
+    marginTop: 20,
+  },
+  navigateBackButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
   },
 });
 
