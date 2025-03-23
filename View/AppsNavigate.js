@@ -36,7 +36,9 @@ export function AppsNavigate() {
   const navigation = useNavigation();
 
   const handleCardPress = (screen) => {
-    navigation.navigate(screen);
+    if (screen) {
+      navigation.navigate(screen);
+    }
   };
 
   return (

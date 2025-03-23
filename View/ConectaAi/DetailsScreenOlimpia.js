@@ -9,22 +9,22 @@ export function DetailsScreenOlimpia({ navigation }) {
         // Definindo a tela de destino com base no nome da imagem
         switch (imageName) {
             case 'imagem1':
-                screenName = 'PontoTuristico1';
+                screenName = 'TouristAttraction1';
                 break;
             case 'imagem2':
-                screenName = 'PontoTuristico2';
+                screenName = 'TouristAttraction2';
                 break;
             case 'imagem3':
-                screenName = 'PontoTuristico3';
+                screenName = 'TouristAttraction3';
                 break;
             case 'imagem4':
-                screenName = 'PontoTuristico4';
+                screenName = 'TouristAttraction4';
                 break;
             case 'imagem5':
-                screenName = 'PontoTuristico5';
+                screenName = 'TouristAttraction5';
                 break;
             case 'imagem6':
-                screenName = 'PontoTuristico6';
+                screenName = 'TouristAttraction6';
                 break;
             default:
                 screenName = 'HomeScreen'; // Tela padrão, se necessário

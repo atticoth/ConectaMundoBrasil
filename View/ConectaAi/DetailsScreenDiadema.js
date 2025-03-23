@@ -9,22 +9,22 @@ export function DetailsScreenDiadema({ navigation }) {
         // Definindo a tela de destino com base no nome da imagem
         switch (imageName) {
             case 'imagem1':
-                screenName = 'PontoTuristico7';
+                screenName = 'TouristAttraction7';
                 break;
             case 'imagem2':
-                screenName = 'PontoTuristico10';
+                screenName = 'TouristAttraction10';
                 break;
             case 'imagem3':
-                screenName = 'PontoTuristico9';
+                screenName = 'TouristAttraction9';
                 break;
             case 'imagem4':
-                screenName = 'PontoTuristico8';
+                screenName = 'TouristAttraction8';
                 break;
             case 'imagem5':
-                screenName = 'PontoTuristico11';
+                screenName = 'TouristAttraction11';
                 break;
             case 'imagem6':
-                screenName = 'PontoTuristico12';
+                screenName = 'TouristAttraction12';
                 break;
             default:
                 screenName = 'HomeScreen'; // Tela padrão, se necessário

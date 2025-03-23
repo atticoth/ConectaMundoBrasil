@@ -3,16 +3,17 @@ import { View, Text, StyleSheet, Image, ScrollView, TouchableOpacity, Dimensions
 import { useNavigation } from '@react-navigation/native';
 import { LinearGradient } from 'expo-linear-gradient';
 
-// Dados das cidades
 const data = [
   {
     id: 1,
     title: 'Olímpia - SP',
     description: 'Descrição Olímpia',
     imageUrl: require('../../assets/images/image1.jpeg'),
-    logoUrl: [require('../../assets/images/condumax e incesa-transparente.png')],
+    logoUrl: [
+      require('../../assets/images/condumax.png'),
+      require('../../assets/images/incesa.png'),
+    ],
     screen: 'DetalhesOlimpia',
-    logoStyle: 'olimpiaLogo', // Referência ao estilo de Olímpia
   },
   {
     id: 2,
@@ -25,17 +26,17 @@ const data = [
       require('../../assets/images/logfarma-transparente.png'),
     ],
     screen: 'DetalhesDiadema',
-    logoStyle: 'diademaLogo',
   },
-  // {
-  //   id: 3,
-  //   title: 'Iacanga - SP',
-  //   description: 'Descrição Iacanga',
-  //   imageUrl: null,
-  //   logoUrl: [require('../../assets/images/serve-transparente.png')],
-  //   screen: null,
-  //   logoStyle: 'iacangaLogo', // Referência ao estilo de Iacanga
-  // },
+  {
+    id: 3,
+    title: 'Iacanga - SP',
+    description: 'Descrição Iacanga',
+    imageUrl: require('../../assets/images/PontosIacanga/igrejamatriz2.jpg'),
+    logoUrl: [
+      require('../../assets/images/serve.jpg'),
+    ],
+    screen: 'DetalhesIacanga',
+  },
 ];
 
 export function HomeScreen() {
@@ -66,29 +67,18 @@ export function HomeScreen() {
               style={styles.card}
               onPress={() => handleCardPress(item.screen)}
             >
-              <View style={styles.leftColumn}>
-                {item.imageUrl ? (
-                  <View style={styles.circleContainer}>
-                    <Image
-                      source={item.imageUrl}
-                      style={styles.cityImage}
-                      resizeMode="cover"
-                    />
-                  </View>
-                ) : (
-                  <View style={styles.circleContainer}>
-                    <Text style={styles.developmentText}>Cidade em Desenvolvimento</Text>
-                  </View>
-                )}
+              <View style={styles.imageContainer}>
+                <Image source={item.imageUrl} style={styles.mainImage} />
               </View>
-              <View style={styles.rightColumn}>
+              <View style={styles.textContainer}>
                 <Text style={styles.title}>{item.title}</Text>
-                <View style={styles.logosContainer}>
+                <Text style={styles.description}>{item.description}</Text>
+                <View style={styles.sponsorContainer}>
                   {item.logoUrl.map((logo, index) => (
                     <Image
                       key={index}
                       source={logo}
-                      style={styles[item.logoStyle]} // Usa o estilo apropriado
+                      style={styles.sponsorLogo}
                       resizeMode="contain"
                     />
                   ))}
@@ -109,7 +99,7 @@ const styles = StyleSheet.create({
   },
   container: {
     flexGrow: 1,
-    padding: Dimensions.get('window').width * 0.04,
+    padding: Dimensions.get('window').width * 0.06,
   },
   scrollContainer: {
     alignItems: 'center',
@@ -119,68 +109,47 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: '#f9f9f9',
     borderRadius: 15,
-    marginBottom: Dimensions.get('window').width * 0.00, // Reduzido o espaçamento inferior entre os cartões
-    padding: Dimensions.get('window').width * 0.05,
+    marginBottom: Dimensions.get('window').width * 0.06,
+    padding: Dimensions.get('window').width * 0.04,
     borderWidth: 1,
     borderColor: '#ccc',
-    marginTop: Dimensions.get('window').width * 0.09, // Mantém o espaçamento superior
+    alignItems: 'center',
+    minHeight: Dimensions.get('window').width * 0.3,
+    width: Dimensions.get('window').width * 0.8,
   },
-  leftColumn: {
+  imageContainer: {
     justifyContent: 'center',
     alignItems: 'center',
     marginRight: Dimensions.get('window').width * 0.04,
   },
-  rightColumn: {
+  mainImage: {
+    width: Dimensions.get('window').width * 0.23,
+    height: Dimensions.get('window').width * 0.23,
+    borderRadius: Dimensions.get('window').width * 0.5,
+  },
+  textContainer: {
     flex: 1,
+    justifyContent: 'center',
   },
   title: {
     fontWeight: 'bold',
     fontSize: 16,
     marginBottom: Dimensions.get('window').width * 0.02,
   },
-  logosContainer: {
+  description: {
+    fontSize: 14,
+    color: '#888',
+  },
+  sponsorContainer: {
     flexDirection: 'row',
-    flexWrap: 'wrap',
-    alignItems: 'center',
-  },
-  olimpiaLogo: {
-    width: Dimensions.get('window').width * 0.50,
-    height: Dimensions.get('window').width * 0.13,
-  },
-  diademaLogo: {
-    width: Dimensions.get('window').width * 0.16,
-    height: Dimensions.get('window').width * 0.12,
-  },
-  iacangaLogo: {
-    width: Dimensions.get('window').width * 0.20,
-    height: Dimensions.get('window').width * 0.16,
-  },
-  circleContainer: {
-    width: Dimensions.get('window').width * 0.23,
-    height: Dimensions.get('window').width * 0.23,
-    borderRadius: Dimensions.get('window').width * 0.115,
-    overflow: 'hidden', // Garante que a imagem não ultrapasse o círculo
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#e0e0e0',
-    position: 'relative', // Adiciona posição relativa
+    minHeight: Dimensions.get('window').width * 0.08,
   },
-  cityImage: {
-    width: '100%',
-    height: '100%',
-    position: 'absolute', // Adiciona posição absoluta
-    top: 0,
-    left: 0,
-    resizeMode: 'cover', // Faz com que a imagem cubra o círculo
-  },
-  developmentText: {
-    color: '#808080',
-    fontSize: 10,
-    textAlign: 'center',
-    fontWeight: 'bold',
+  sponsorLogo: {
+    width: Dimensions.get('window').width * 0.16,
+    height: Dimensions.get('window').width * 0.15,
   },
 });
 
 export default HomeScreen;
-
-
