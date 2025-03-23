@@ -144,4 +144,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default PontoTuristico13;
+export default TouristAttraction13;

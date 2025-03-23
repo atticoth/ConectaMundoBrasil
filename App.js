@@ -112,7 +112,7 @@ function App() {
         <Stack.Screen
           name="AppsNavigate"
           component={AppsNavigate}
-          options={{ title: "Aplicativos" }}
+          options={{ headerShown: false }}
         />
 
         {/* ConectaMundoBrasil */}

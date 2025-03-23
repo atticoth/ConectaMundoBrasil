@@ -48,6 +48,10 @@ export function HomeScreen() {
     }
   };
 
+  const handleNavigateBack = () => {
+    navigation.navigate('AppsNavigate');
+  };
+
   React.useLayoutEffect(() => {
     navigation.setOptions({
       title: 'Cidades',
@@ -87,6 +91,10 @@ export function HomeScreen() {
             </TouchableOpacity>
           ))}
         </ScrollView>
+        {/* Botão NavigateBack */}
+        <TouchableOpacity style={styles.navigateBackButton} onPress={handleNavigateBack}>
+          <Text style={styles.navigateBackButtonText}>Voltar Seleção Apps</Text>
+        </TouchableOpacity>
       </View>
     </LinearGradient>
   );
@@ -149,6 +157,18 @@ const styles = StyleSheet.create({
   sponsorLogo: {
     width: Dimensions.get('window').width * 0.16,
     height: Dimensions.get('window').width * 0.15,
+  },
+  navigateBackButton: {
+    backgroundColor: '#003293',
+    padding: 15,
+    borderRadius: 10,
+    alignItems: 'center',
+    marginTop: 20,
+  },
+  navigateBackButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
   },
 });
 
