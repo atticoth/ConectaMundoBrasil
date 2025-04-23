@@ -8,19 +8,19 @@ export function DetailsScreenIacanga({ navigation }) {
 
         switch (imageName) {
             case 'imagem1':
-                screenName = 'PontoTuristico13';
+                screenName = 'TouristAttraction13';
                 break;
             case 'imagem2':
-                screenName = 'PontoTuristico14';
+                screenName = 'TouristAttraction14';
                 break;
             case 'imagem3':
-                screenName = 'PontoTuristico15';
+                screenName = 'TouristAttraction15';
                 break;
             case 'imagem4':
-                screenName = 'PontoTuristico16';
+                screenName = 'TouristAttraction16';
                 break;
             case 'imagem5':
-                screenName = 'PontoTuristico17';
+                screenName = 'TouristAttraction17';
                 break;
             default:
                 screenName = 'HomeScreen';

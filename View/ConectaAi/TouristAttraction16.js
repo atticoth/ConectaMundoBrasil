@@ -13,7 +13,7 @@ export function TouristAttraction16({ navigation }) {
                     <View style={styles.content}>
                         <Text style={styles.title}>Lago Municipal</Text>
                         <View style={styles.imageContainer}>
-                            <Image source={require('../../assets/images/PontosIacanga/rosas3.jpg')} style={styles.imageLarge} resizeMode="cover" />
+                            <Image source={require('../../assets/images/PontosIacanga/lago5.jpg')} style={styles.imageLarge} resizeMode="cover" />
                         </View>
                         <Text style={styles.description}>
                         O lago municipal, situado perto da Prainha, conta com uma área coberta para reuniões e eventos, banheiros, academia ao ar livre e pista para caminhada. 

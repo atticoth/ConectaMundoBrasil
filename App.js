@@ -124,7 +124,7 @@ function App() {
         <Stack.Screen
           name="TourismDetailsScreenConectaMundoBrasil"
           component={TourismDetailsScreenConectaMundoBrasil}
-          options={{ title: "Cidades" }}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name="DetalhesContagem"
@@ -347,7 +347,7 @@ function App() {
         <Stack.Screen
           name="TourismDetailsScreenConectaMundo"
           component={TourismDetailsScreenConectaMundo}
-          options={{ title: "Cidades" }}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name="DetalhesCastilho"
