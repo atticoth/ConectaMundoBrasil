@@ -41,10 +41,21 @@ const data = [
     title: "Pirassununga/SP",
     description: "Patrocínio",
     imageUrl: require("../assets/images/pirassunungaicon.jpg"),
-    sponsors: [
-      require("../assets/images/CompanhiaMullerBebidas.png"),
-    ],
+    sponsors: [require("../assets/images/CompanhiaMullerBebidas.png")],
     screen: "DetalhesPirassununga",
+  },
+  {
+    id: 4, 
+    title: "Currais/PI",
+    description: "Patrocínio",
+    imageUrl: require("../assets/images/currais_cidade.jpg"),
+    sponsors: [
+      require("../assets/images/NewHolland.png"),
+      require("../assets/images/NewHollandConstruction.png"),
+      require("../assets/images/CNHCapital.png"),
+    ],
+    screen: "DetalhesCurrais",
+    badge: "2ª edição", 
   },
 ];
 
@@ -71,9 +82,15 @@ export function TourismDetailsScreen() {
               <View style={styles.imageContainer}>
                 <Image source={item.imageUrl} style={styles.mainImage} />
               </View>
+
               <View style={styles.textContainer}>
-                <Text style={styles.title}>{item.title}</Text>
+                <View style={styles.titleRow}>
+                  <Text style={styles.title}>{item.title}</Text>
+                  {item.badge ? <Text style={styles.badge}>{item.badge}</Text> : null}
+                </View>
+
                 <Text style={styles.description}>{item.description}</Text>
+
                 <View style={styles.sponsorContainer}>
                   {item.sponsors.map((sponsor, index) => (
                     <Image
@@ -93,38 +110,56 @@ export function TourismDetailsScreen() {
   );
 }
 
+const W = Dimensions.get("window").width;
+
 const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
-    padding: Dimensions.get("window").width * 0.06,
+    padding: W * 0.06,
   },
   card: {
     flexDirection: "row",
     backgroundColor: "#f9f9f9",
     borderRadius: 15,
-    marginBottom: Dimensions.get("window").width * 0.06,
-    padding: Dimensions.get("window").width * 0.04,
+    marginBottom: W * 0.06,
+    padding: W * 0.04,
     borderWidth: 1,
     borderColor: "#ccc",
   },
   imageContainer: {
     justifyContent: "center",
     alignItems: "center",
-    marginRight: Dimensions.get("window").width * 0.04,
+    marginRight: W * 0.04,
   },
   mainImage: {
-    width: Dimensions.get("window").width * 0.23,
-    height: Dimensions.get("window").width * 0.23,
-    borderRadius: Dimensions.get("window").width * 0.5,
+    width: W * 0.23,
+    height: W * 0.23,
+    borderRadius: W * 0.5,
   },
   textContainer: {
     flex: 1,
     justifyContent: "center",
   },
+  titleRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    marginBottom: W * 0.02,
+  },
   title: {
     fontWeight: "bold",
     fontSize: 16,
-    marginBottom: Dimensions.get("window").width * 0.02,
+    marginRight: 8,
+    flexShrink: 1,
+  },
+  badge: {
+    fontSize: 12,
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    borderRadius: 999,
+    backgroundColor: "#2563eb",
+    color: "#fff",
+    overflow: "hidden",
   },
   description: {
     fontSize: 14,
@@ -133,11 +168,11 @@ const styles = StyleSheet.create({
   sponsorContainer: {
     flexDirection: "row",
     justifyContent: "space-around",
-    marginTop: Dimensions.get("window").width * 0.02,
+    marginTop: W * 0.02,
   },
   sponsorLogo: {
-    width: Dimensions.get("window").width * 0.17,
-    height: Dimensions.get("window").width * 0.08,
+    width: W * 0.17,
+    height: W * 0.08,
   },
 });
 
