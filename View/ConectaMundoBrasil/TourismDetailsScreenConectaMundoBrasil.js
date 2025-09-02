@@ -41,10 +41,20 @@ const data = [
     title: "Pirassununga/SP",
     description: "Patrocínio",
     imageUrl: require("../../assets/images/pirassunungaicon.jpg"),
-    sponsors: [
-      require("../../assets/images/CompanhiaMullerBebidas.png"),
-    ],
+    sponsors: [require("../../assets/images/CompanhiaMullerBebidas.png")],
     screen: "DetalhesPirassununga",
+  },
+  {
+    id: 4,
+    title: "Currais/PI",
+    description: "Patrocínio",
+    imageUrl: require("../../assets/images/currais_cidade.jpg"),
+    sponsors: [
+      require("../../assets/images/NewHolland.png"),
+      require("../../assets/images/NewHollandConstruction.png"),
+      require("../../assets/images/CNHCapital.png"),
+    ],
+    screen: "DetalhesCurrais",
   },
 ];
 
@@ -56,7 +66,7 @@ export function TourismDetailsScreenConectaMundoBrasil() {
   };
 
   const handleNavigateBack = () => {
-    navigation.navigate('AppsNavigate');
+    navigation.navigate("AppsNavigate");
   };
 
   return (
@@ -75,9 +85,19 @@ export function TourismDetailsScreenConectaMundoBrasil() {
               <View style={styles.imageContainer}>
                 <Image source={item.imageUrl} style={styles.mainImage} />
               </View>
+
               <View style={styles.textContainer}>
-                <Text style={styles.title}>{item.title}</Text>
+                <View style={styles.titleRow}>
+                  <Text style={styles.title}>{item.title}</Text>
+                  {item.title === "Currais/PI" && (
+                    <View style={styles.badge}>
+                      <Text style={styles.badgeText}>2ª edição</Text>
+                    </View>
+                  )}
+                </View>
+
                 <Text style={styles.description}>{item.description}</Text>
+
                 <View style={styles.sponsorContainer}>
                   {item.sponsors.map((sponsor, index) => (
                     <Image
@@ -92,8 +112,11 @@ export function TourismDetailsScreenConectaMundoBrasil() {
             </TouchableOpacity>
           ))}
         </ScrollView>
-        {/* Botão NavigateBack */}
-        <TouchableOpacity style={styles.navigateBackButton} onPress={handleNavigateBack}>
+
+        <TouchableOpacity
+          style={styles.navigateBackButton}
+          onPress={handleNavigateBack}
+        >
           <Text style={styles.navigateBackButtonText}>Voltar Seleção Apps</Text>
         </TouchableOpacity>
       </View>
@@ -105,6 +128,9 @@ const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
     padding: Dimensions.get("window").width * 0.06,
+  },
+  scrollContainer: {
+    paddingBottom: 24,
   },
   card: {
     flexDirection: "row",
@@ -129,10 +155,26 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
   },
+  titleRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    marginBottom: Dimensions.get("window").width * 0.02,
+  },
+  badge: {
+    backgroundColor: "#003293",
+    paddingVertical: 4,
+    paddingHorizontal: 8,
+    borderRadius: 8,
+  },
+  badgeText: {
+    color: "#fff",
+    fontSize: 12,
+    fontWeight: "bold",
+  },
   title: {
     fontWeight: "bold",
     fontSize: 16,
-    marginBottom: Dimensions.get("window").width * 0.02,
   },
   description: {
     fontSize: 14,
@@ -148,16 +190,16 @@ const styles = StyleSheet.create({
     height: Dimensions.get("window").width * 0.08,
   },
   navigateBackButton: {
-    backgroundColor: '#003293',
+    backgroundColor: "#003293",
     padding: 15,
     borderRadius: 10,
-    alignItems: 'center',
+    alignItems: "center",
     marginTop: 20,
   },
   navigateBackButtonText: {
-    color: '#fff',
+    color: "#fff",
     fontSize: 16,
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
 });
 
